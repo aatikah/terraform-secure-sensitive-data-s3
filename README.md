@@ -1,6 +1,6 @@
 # Securing Sensitive Financial Reports in S3 Buckets: A Step-by-Step Guide
 
-This project demonstrates how to secure an AWS S3 bucket containing sensitive financial reports using Terraform, AWS Lambda, and presigned URLs. The setup ensures that customers can securely download their data while maintaining strict access controls, encryption, and compliance.
+This project demonstrates how to secure an AWS S3 bucket containing sensitive files using Terraform, AWS Lambda, IAM Roles & Policy, presigned URLs and other AWS services. The setup ensures that customers can securely download their data while maintaining strict access controls, encryption, and compliance.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -14,7 +14,7 @@ This project demonstrates how to secure an AWS S3 bucket containing sensitive fi
 
 ## Overview
 
-This project provides a secure way to store and share sensitive financial reports in an S3 bucket. The solution includes:
+This project provides a secure way to store and share sensitive files in an S3 bucket. The solution includes:
 - **Server-Side Encryption**: Ensures data is encrypted at rest using AES256.
 - **Block Public Access**: Prevents unauthorized public access to the bucket.
 - **VPC Endpoint**: Restricts access to the S3 bucket to a specific VPC.
@@ -56,22 +56,19 @@ vpc_id     = "your-vpc-id"
 aws_region = "your-aws-region"
 ```
 ### 4. Deploy the Infrastructure
-Apply the Terraform configuration to deploy the infrastructure:
+Initialize and apply the Terraform configuration to deploy the infrastructure:
 ```bash
+terraform init
+terraform validate
 terraform apply -auto-approve
 ```
-### 5. Upload the Lambda Function
-Package and upload the Lambda function code:
-```bash
-cd ../lambda-function
-zip -r presigned_url_function.zip lambda_function.py
-aws lambda update-function-code --function-name generate-presigned-url --zip-file fileb://presigned_url_function.zip
-```
+### 5. Create Python script for  Lambda Function
+Create a script and name it lambda_function.py, zip and name presigned_url_function.zip
 
 
 ## Testing
 ### 1. Run the Test Script
-Navigate to the test-script directory and run the test script:
+Navigate to the test-script and run the test script:
 ```bash
 cd ../test-script
 python test.py
