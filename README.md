@@ -1,3 +1,6 @@
+# For Detailed Step by Step Guide
+You can find detailed step by step guide on creating this project on the Medium post I created [HERE](https://techandapps.com).
+
 # Securing Sensitive Financial Reports in S3 Buckets: A Step-by-Step Guide
 
 This project demonstrates how to secure an AWS S3 bucket containing sensitive files using Terraform, AWS Lambda, IAM Roles & Policy, presigned URLs and other AWS services. The setup ensures that customers can securely download their data while maintaining strict access controls, encryption, and compliance.
