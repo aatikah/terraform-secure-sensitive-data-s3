@@ -5,13 +5,12 @@ from botocore.exceptions import NoCredentialsError, ClientError
 
 # Initialize AWS clients
 s3_client = boto3.client('s3')
-cloudfront_client = boto3.client('cloudfront')
 lambda_client = boto3.client('lambda')
 
 # Replace these with your actual resource names/IDs
 bucket_name = "statements-bucket-21321"
 lambda_function_name = "generate-presigned-url"
-vpc_endpoint_id = "vpce-052b7d314e5db2c6e"
+vpc_endpoint_id = "vpce-052b7d314e5d****"
 test_file = "test-file.txt"
 
 
