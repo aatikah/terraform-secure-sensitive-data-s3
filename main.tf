@@ -13,13 +13,6 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-variable "vpc_id" {
-  type = string
-}
-
-variable "aws_region" {
-  type = string
-}
 
 
 # Configure the S3 bucket with security best practices
