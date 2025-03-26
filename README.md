@@ -1,5 +1,5 @@
 # For Detailed Step by Step Guide
-You can find detailed step by step guide on creating this project on the Medium post I created [HERE](https://link.medium.com/NWGi0si9MQb).
+You can find detailed step by step guide on creating this project on the [Medium post I created HERE](https://link.medium.com/NWGi0si9MQb).
 
 # Securing Sensitive Financial Reports in S3 Buckets: A Step-by-Step Guide
 
