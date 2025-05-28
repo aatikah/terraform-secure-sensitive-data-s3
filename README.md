@@ -114,3 +114,9 @@ This project is licensed under the MIT License.
 - Replace `your-username` in the `git clone` command with your GitHub username.
 - Update the `terraform.tfvars` file with your specific AWS VPC ID and region.
 - Ensure the Lambda function name (`generate-presigned-url`) matches the one in your Terraform configuration.
+
+  ---
+
+**⭐ If you find this project helpful, please give it a star!**
+- Support me- [buymeacoffee.com/aatikah](https://buymeacoffee.com/aatikah)
+- Connect with me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/abdulhakeem-sulaiman/)
