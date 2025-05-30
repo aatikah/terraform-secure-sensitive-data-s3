@@ -1,5 +1,5 @@
 # For Detailed Step by Step Guide
-You can find detailed step by step guide on creating this project on the [Medium post I created HERE](https://link.medium.com/NWGi0si9MQb).
+You can find detailed step by step guide on creating this project on the [Medium post I created HERE](https://towardsaws.com/securing-aws-s3-buckets-with-terraform-a-step-by-step-guide-e17eba38266f?sk=4907c9b15f5c13ddb61582e874927dbe).
 
 # Securing Sensitive Financial Reports in S3 Buckets: A Step-by-Step Guide
 
